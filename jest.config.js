@@ -3,15 +3,15 @@ module.exports = {
   collectCoverage: true,
   // node 14.x에서 커버리지 제공자 v8은 속도가 좋고 보고서도 거의 좋음
   coverageProvider: "v8",
-  collectCoverageFrom: [
-    "**/*.{js,jsx,ts,tsx}",
-    "!**/*.d.ts",
-    "!**/node_modules/**",
-    "!<rootDir>/out/**",
-    "!<rootDir>/.next/**",
-    "!<rootDir>/*.config.js",
-    "!<rootDir>/coverage/**",
-  ],
+  // collectCoverageFrom: [
+  //   "**/*.{js,jsx,ts,tsx}",
+  //   "!**/*.d.ts",
+  //   "!**/node_modules/**",
+  //   "!<rootDir>/out/**",
+  //   "!<rootDir>/.next/**",
+  //   "!<rootDir>/*.config.js",
+  //   "!<rootDir>/coverage/**",
+  // ],
   moduleNameMapper: {
     // CSS import 처리(CSS 모듈 포함)
     // https://jestjs.io/docs/webpack#mocking-css-modules
